@@ -1,3 +1,4 @@
+//import { AppContainer } from "./core";
 import { AppContainer } from "@expressots/core";
 import { AppModule } from "./app.module";
 

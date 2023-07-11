@@ -1,7 +1,7 @@
-import { BaseController } from "@expressots/core";
-import { controller, httpGet, response } from "inversify-express-utils";
 import { Response } from "express";
+import { controller, httpGet, response } from "inversify-express-utils";
 import { AppUseCase } from "./app.usecase";
+import { BaseController } from "@expressots/core";
 
 @controller("/")
 class AppController extends BaseController {
@@ -11,7 +11,10 @@ class AppController extends BaseController {
 
     @httpGet("/")
     execute(@response() res: Response) {
-        return res.render("index", { message: this.appUseCase.execute() });
+        return this.callUseRenderAsync(res, "index", {
+            layout: "layout",
+            message: this.appUseCase.execute(),
+        });
     }
 }
 
