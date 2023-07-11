@@ -1,10 +1,10 @@
 {
   "name": "expresso-stackblitz",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "StackBlitz template for Expresso",
+  "author": "Richard Zampieri",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc -p tsconfig.build.json",
