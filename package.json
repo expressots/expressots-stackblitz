@@ -5,6 +5,9 @@
   "author": "Richard Zampieri",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=18.10.0"
+  },
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc -p tsconfig.build.json",
