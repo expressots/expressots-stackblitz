@@ -1,15 +1,15 @@
 import { Response } from "express";
-import { controller, httpGet, response } from "inversify-express-utils";
-import { AppUseCase } from "./app.usecase";
+import { Get, controller, response } from "@expressots/adapter-express";
 import { BaseController } from "@expressots/core";
+import { AppUseCase } from "./app.usecase";
 
 @controller("/")
-class AppController extends BaseController {
+export class AppController extends BaseController {
     constructor(private appUseCase: AppUseCase) {
-        super("app-controller");
+        super();
     }
 
-    @httpGet("/")
+    @Get("/")
     execute(@response() res: Response) {
         return this.callUseRenderAsync(res, "index", {
             layout: "layout",
@@ -17,5 +17,3 @@ class AppController extends BaseController {
         });
     }
 }
-
-export { AppController };

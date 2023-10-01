@@ -5,8 +5,10 @@ const jestConfig: JestConfigWithTsJest = {
     testEnvironment: "node",
     verbose: true,
     automock: false,
-    testMatch: ["**/*.test.ts", "**/*.spec.ts"],
+    modulePaths: ["<rootDir>/test"],
+    testRegex: "/test/.*\\.spec\\.ts$",
     coverageDirectory: "./coverage",
+    coveragePathIgnorePatterns: ["/node_modules/"],
     coverageReporters: ["text", "html", "json"],
 };
 

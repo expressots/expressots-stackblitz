@@ -1,18 +1,21 @@
-import path from "path";
 import "reflect-metadata";
-import { container } from "./app.container";
+
+import path from "path";
 import { engine } from "express-handlebars";
-import { AppInstance, IHandlebars, ServerEnvironment } from "@expressots/core";
+import { ServerEnvironment } from "@expressots/adapter-express";
+import { AppFactory, IHandlebars } from "@expressots/core";
+import { container } from "./app.container";
 
 async function bootstrap() {
-    AppInstance.create(container);
-    AppInstance.setEngine<IHandlebars>({
+    const app = await AppFactory.create(container, []);
+    
+    app.setEngine<IHandlebars>({
         extName: "hbs",
         viewPath: path.join(__dirname, "..", "views"),
         engine: engine({ defaultLayout: "layout", extname: "hbs" }),
     });
 
-    AppInstance.listen(3000, ServerEnvironment.Development);
+    await app.listen(3000, ServerEnvironment.Development);
 }
 
 bootstrap();

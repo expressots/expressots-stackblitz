@@ -1,7 +1,7 @@
 {
-  "name": "expresso-stackblitz",
+  "name": "expressots-stackblitz",
   "version": "1.0.0",
-  "description": "StackBlitz template for Expresso",
+  "description": "StackBlitz template for ExpressoTS",
   "author": "Richard Zampieri",
   "private": true,
   "license": "MIT",
@@ -18,17 +18,15 @@
   },
   "keywords": [],
   "dependencies": {
-    "@expressots/core": "^1.5.0-dev",
+    "@expressots/adapter-express": "1.1.0",
+    "@expressots/core": "2.3.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
     "inversify": "^6.0.1",
     "inversify-binding-decorators": "^4.0.0",
-    "inversify-express-utils": "^6.3.2",
     "path": "^0.12.7",
-    "reflect-metadata": "^0.1.13",
-    "winston": "^3.9.0",
-    "winston-daily-rotate-file": "^4.7.1"
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
