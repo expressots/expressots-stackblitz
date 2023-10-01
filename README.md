@@ -1,74 +1,110 @@
-# Expresso TS
+<a name="readme-top"></a>
 
-A Typescript + [Node.js]("https://nodejs.org/en/") lightweight framework for quick building scalable, easy to read and maintain, server-side applications 🚀
+<!-- PROJECT SHIELDS -->
 
-## Philosophy
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-ExpressoTS is a TypeScript lightweight framework for building scalable, readable and maintainable server-side applications. The framework provides a level of abstraction on top of common HTTP server framework Expressjs exposing their API's directly to the developer. This provides freedom and brings to the developer a tool that is well known and easy to use.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://github.com/expressots/expressots/blob/main/media/expressots.png" alt="Logo" width="120">
+  </a>
 
-## How to use
+  <h3 align="center">ExpressoTS Framework</h3>
 
-### Executing in development mode
+  <p align="center">
+    Everything you need to know to build applications with ExpressoTS
+    <br />
+    <a href="https://doc.expresso-ts.com/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/expressots/expressots/discussions">Let's discuss</a>
+    ·
+    <a href="https://github.com/expressots/expressots/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/expressots/expressots/issues">Request Feature</a>
+  </p>
+</div>
 
-```bash
-npm run dev
-```
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#support-the-project">Support the project</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-### Generating production build
+<!-- ABOUT THE PROJECT -->
 
-```bash
-npm run build
-```
+# About The Project
 
-### Executing in production mode
+ExpressoTS is a [Typescript](https://www.typescriptlang.org/) + [Node.js](https://nodejs.org/en/) lightweight framework for quick building scalable, easy to read and maintain, server-side applications 🐎
 
-```bash
-npm run prod
-```
+## Getting Started
 
-## Test
+-   Here is our [Site](https://expresso-ts.com/)
+-   You can find our [Documentation here](https://doc.expresso-ts.com/)
+-   Checkout our [First Steps documentation](https://doc.expresso-ts.com/docs/overview/first-steps)
+-   Our [CLI Documentation](https://doc.expresso-ts.com/docs/cli/overview)
 
-How to run test scripts
+## Contributing
 
-### Unit tests
+Welcome to the ExpressoTS community, a place bustling with innovative minds just like yours. We're absolutely thrilled to have you here!
+ExpressoTS is more than just a TypeScript framework; it's a collective effort by developers who are passionate about creating a more efficient, secure, and robust web ecosystem. We firmly believe that the best ideas come from a diversity of perspectives, backgrounds, and skills.
 
-```bash
-npm run test
-```
+Why Contribute to Documentation?
 
-### Test coverage
+-   **Share Knowledge**: If you've figured out something cool, why keep it to yourself?
+-   **Build Your Portfolio**: Contributing to an open-source project like ExpressoTS is a great way to showcase your skills.
+-   **Join a Network**: Get to know a community of like-minded developers.
+-   **Improve the Product**: Help us fill in the gaps, correct errors, or make complex topics easier to understand.
 
-```bash
-npm run test:cov
-```
+Ready to contribute?
 
-## Documentation
-
-- Here is our [Official Documentation](https://expresso-ts.com/)
-- Checkout our [First Steps documentation](https://expresso-ts.com/docs/overview/first-steps)
-- Our [CLI Documentation](https://expresso-ts.com/docs/category/cli)
-
-## Questions
-
-For questions and support please use the Official [Discord Channel](https://discord.com/invite/PyPJfGK). We have a very active community there, that will be happy to help you. Post your questions in the channel called **HELP EXPRESSO TS** and forum called **help**.
-
-## Issues
-
-The [Issue Reporting Channel](https://github.com/expressots/expressots/issues) is for bug report and feature request **only**.
-
-Before you create an issue, please make sure you read the [Contribution Guidelines](CONTRIBUTING.md).
+-   [Contributing Guidelines](https://github.com/expressots/expressots/blob/main/CONTRIBUTING.md)
+-   [How to Contribute](https://github.com/expressots/expressots/blob/main/CONTRIBUTING_HOWTO.md)
+-   [Coding Guidelines](https://github.com/rsaz/TypescriptCodingGuidelines)
 
 ## Support the project
 
-Expresso TS is an MIT-licensed open source project. It's an independent project with ongoing development made possible thanks to your support. If you'd like to help, please consider:
+ExpressoTS is an independent open source project with ongoing development made possible thanks to your support. If you'd like to help, please consider:
 
-- Become a sponsor on **[Sponsor no GitHub](https://github.com/sponsors/expressots)**
-- Follow the **[organization](https://github.com/expressots)** on GitHub and Star ⭐ the project
-- Subscribe to the Twitch channel: **[Richard Zampieri](https://www.twitch.tv/richardzampieri)**
-- Join our **[Discord](https://discord.com/invite/PyPJfGK)**
-- Contribute submitting **[issues and pull requests](https://github.com/expressots/expressots/issues/new/choose)**
-- Share the project with your friends and colleagues
+-   Become a **[sponsor on GitHub](https://github.com/sponsors/expressots)**
+-   Follow the **[organization](https://github.com/expressots)** on GitHub and Star ⭐ the project
+-   Subscribe to the Twitch channel: **[Richard Zampieri](https://www.twitch.tv/richardzampieri)**
+-   Join our **[Discord](https://discord.com/invite/PyPJfGK)**
+-   Contribute submitting **[issues and pull requests](https://github.com/expressots/expressots/issues)**
+-   Share the project with your friends and colleagues
 
 ## License
 
-ExpressoTS is **[MIT licensed](LICENSE.md)**
+Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/expressots/expressots/blob/main/LICENSE) for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/expressots/expressots-stackblitz?style=for-the-badge
+[contributors-url]: https://github.com/expressots/expressots-stackblitz/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/expressots/expressots-stackblitz?style=for-the-badge
+[forks-url]: https://github.com/expressots/expressots-stackblitz/forks
+[stars-shield]: https://img.shields.io/github/stars/expressots/expressots-stackblitz?style=for-the-badge
+[stars-url]: https://github.com/expressots/expressots-stackblitz/stargazers
+[issues-shield]: https://img.shields.io/github/issues/expressots/expressots-stackblitz?style=for-the-badge
+[issues-url]: https://github.com/expressots/expressots-stackblitz/issues
+[license-shield]: https://img.shields.io/github/license/expressots/expressots-stackblitz?style=for-the-badge
+[license-url]: https://github.com/expressots/expressots-stackblitz/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/company/expresso-ts/
+[product-screenshot]: images/screenshot.png
