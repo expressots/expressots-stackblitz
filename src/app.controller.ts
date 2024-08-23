@@ -1,5 +1,4 @@
-import { Get, Render, controller, response } from "@expressots/adapter-express";
-import { Response } from "express";
+import { Get, Render, controller } from "@expressots/adapter-express";
 
 @controller("/")
 export class AppController {
