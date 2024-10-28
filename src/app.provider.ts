@@ -18,19 +18,13 @@ export class App extends AppExpress {
     }
 
     protected configureServices(): void | Promise<void> {
-        this.provider.register(Env);
-
         this.setEngine(Engine.HBS);
 
         this.middleware.addBodyParser();
         this.middleware.setErrorHandler({ showStackTrace: true });
     }
 
-    protected postServerInitialization(): void | Promise<void> {
-        if (this.isDevelopment()) {
-            this.provider.get(Env).checkAll();
-        }
-    }
+    protected postServerInitialization(): void | Promise<void> {}
 
     protected serverShutdown(): void | Promise<void> {}
 }
