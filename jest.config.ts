@@ -2,13 +2,12 @@ import type { JestConfigWithTsJest } from "ts-jest";
 
 const jestConfig: JestConfigWithTsJest = {
     preset: "ts-jest",
+    rootDir: "./",
     testEnvironment: "node",
     verbose: true,
     automock: false,
-    modulePaths: ["<rootDir>/test"],
-    testRegex: "/test/.*\\.spec\\.ts$",
+    testMatch: ["**/*.test.ts", "**/*.spec.ts"],
     coverageDirectory: "./coverage",
-    coveragePathIgnorePatterns: ["/node_modules/"],
     coverageReporters: ["text", "html", "json"],
 };
 

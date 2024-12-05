@@ -1,13 +1,4 @@
-import { AppFactory, ServerEnvironment } from "@expressots/core";
-import { container } from "./app.container";
-import { App } from "./app.provider";
+import { AppFactory } from "@expressots/core";
+import { App } from "./app";
 
-async function bootstrap() {
-    const app = await AppFactory.create(container, App);
-    await app.listen(3000, ServerEnvironment.Development, {
-        appName: "ExpressoTS Starter",
-        appVersion: "1.0.0",
-    });
-}
-
-bootstrap();
+AppFactory.create(App).then((app) => app.listen(3000));
